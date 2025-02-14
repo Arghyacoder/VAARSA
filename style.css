@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 75, 133);
+}
+
+.nav_links{
+    margin: 10px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.title_para{
+    color: white;
+}
