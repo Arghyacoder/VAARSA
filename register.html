@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>VAARSA</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="title">
+            <img src="vaarsa.jpeg">
+        </div>
+        <div class="burger" onclick="toggleBurger()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <div class="nav_links">
+            <a href="index.html" class="menu">Home</a>
+            <a href="#" class="menu">Student</a>
+            <a href="#" class="menu">Chalk!</a>
+            <a href="#" class="menu">About</a>
+            <a href="#" class="menu">Donate</a>
+            <a href="login.html" class="menu block green">Login</a>
+            <a href="register.html" class="menu block blue">Register</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="reg_box">
+            <h1 class="log789">Register</h1>
+            <form action="a.php" class="forms">
+                <input type="name" name="first_name" id="first_name" placeholder="First Name" class="input_reg">
+                <input type="name" name="last_name" id="last_name" placeholder="Lastname Name" class="input_reg">
+                <input type="number" name="registration_number" id="registration_no" placeholder="University Enrollment Number" class="input_reg">
+                <input type="email" name="email" id="email" placeholder="Email" class="input_reg">
+                <div class="selector">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" class="selector_input">
+                        <option value="Not Selected">Select</option>
+                        <option value="Energy Engineering">Energy Engineering</option>
+                        <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Metallurgy and Materials Engineering">Metallurgy and Materials Engineering</option>
+                    </select>
+                </div>
+                <div class="selector">
+                    <label for="semester">Semester &nbsp;&nbsp;&nbsp;</label>
+                    <select id="semester" name="semester" class="selector_input">
+                        <option value="Not Selected">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password" class="input_reg">
+                <input type="password" id="password" placeholder="Conform Password" class="input_reg">
+                <div class="user_button_reg">
+                    <input type="submit" value="Register" class="register_button">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contributors">
+            <p>Developed by Arghyadipta Das & Anurag Arya <br> Department of Energy Engineering</p>
+        </div>
+        <div class="copy">
+            <p>VAARSA &copy; 2025 A CCID Product</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+    const navlist = document.querySelector('.nav_links');
+
+    document.querySelector('.burger').addEventListener('click', function () {
+        document.querySelector('.nav_links').classList.toggle('expanded');
+        document.querySelector('.navbar').classList.toggle('expandedlist');
+    });
+</script>
+<script>
+    function toggleBurger() {
+        document.querySelector('.burger').classList.toggle('active');
+        // document.querySelector('.nav_links').classList.toggle('expanded');
+    }
+</script>
+
+</html>
