@@ -5,108 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- <script src="image-detection.js"></script> -->
+    <script src="navbar_script.js"></script>
+
+    <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- title  -->
     <title>VAARSA</title>
 </head>
 
 <body>
     <div class="navbar">
-        <div class="title">
-            <img src="vaarsa.jpeg">
+        <div class="upper_navbar">
+            <div class="container">
+                <img src="vaarsa.png">
+            </div>
+            <div class="burger" onclick="toggleBurger()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
         </div>
-        <div class="burger" onclick="toggleBurger()">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>        
-        <div class="nav_links">
-            <a href="index.html" class="menu">Home</a>
-            <a href="#" class="menu">Student</a>
-            <a href="#" class="menu">Chalk!</a>
-            <a href="#" class="menu">About</a>
-            <a href="#" class="menu">Donate</a>
-            <a href="login.html" class="menu block green">Login</a>
-            <a href="register.html" class="menu block blue">Register</a>
+        <div class="lower_navbar">
+            <div class="nav_links">
+                <a href="index.html" class="menu">Home</a>
+                <!-- <a href="#" class="menu">Student</a>
+                <a href="#" class="menu">Chalk!</a> -->
+                <a href="#" class="menu">About</a>
+                <a href="#" class="menu">Donate</a>
+            </div>
+            <div class="buttons">
+                <a href="login.html" class="button_link">
+                    <button class="button_common login">Login</button>
+                </a>
+                <a href="register.html" class="button_link">
+                    <button class="button_common register">Register</button>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="login_box">
-            <div class="wrap">
-                <form action="a.php" class="forms">
-                    <h1 class="log789">Login</h1>
-                    <input type="email" name="email" id="email" placeholder="Email" class="input">
-                    <input type="password" name="password" id="password" placeholder="Password" class="input">
-                    <a href="#" class="forgot_pass">Forgot password?</a>
-                    <div class="buttons">
-                        <input type="submit" value="Login" class="user_button">
-                        <a href="register.html" class="register">
-                            <button type="button" class="register_button">Register</button>
-                        </a>
-                    </div>
-                </form>
+    <div class="content">
+        <div class="article" onclick="window.location.href='anotherpage.html'">
+            <img src="20240918_164538.jpg">
+            <hr>
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia aliquam vitae ea ducimus a ratione voluptates libero deserunt. Iste libero accusamus veritatis, ipsam officia, eum recusandae facere explicabo neque tenetur repellat aliquam, beatae ratione! Saepe, dicta perspiciatis voluptates aperiam eveniet blanditiis quibusdam illo possimus a temporibus ab quia ex.</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
             </div>
-            <p class="CCID">A CCID Product
-            <br> 
-            [Community for Code Innovation & Development]
-            <br> 
-            CCID &copy; 2025</p>
         </div>
-        <div class="content">
-            <h1>Latest Articles</h1>
-            <div class="article">
-                <h1 class="article_heading">How to generate income via internet by writing articles</h1>
-                <p class="article_body">
-                    <center>
-                        <a href="How_to_generate_income_online.html" class="read_more">Read Article</a>
-                    </center>
-                </p>
+        <div class="article">
+            <img src="20241010_161536.jpg">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos vitae culpa, enim animi veritatis voluptatum officiis inventore ducimus esse dolor alias modi omnis saepe tempora facere! In labore necessitatibus accusamus. At, fugit eos accusamus aut suscipit minima non adipisci eum cumque alias culpa porro doloribus rerum itaque, modi placeat qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
             </div>
-            <div class="article">
-                <h1 class="article_heading">Lorem ipsum dolor sit amet.</h1>
-                <p class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid eum quidem molestias a enim dignissimos cupiditate error qui? Illo, atque aspernatur veritatis modi cumque perspiciatis, corporis blanditiis quae, repellat praesentium iste deleniti accusamus nemo.</p>
-            </div>
-            <div class="article">
-                <h1 class="article_heading">Lorem ipsum dolor sit amet.</h1>
-                <p class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid eum quidem molestias a enim dignissimos cupiditate error qui? Illo, atque aspernatur veritatis modi cumque perspiciatis, corporis blanditiis quae, repellat praesentium iste deleniti accusamus nemo.</p>
-            </div>
-            <div class="article">
-                <h1 class="article_heading">Lorem ipsum dolor sit amet.</h1>
-                <p class="article_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid eum quidem molestias a enim dignissimos cupiditate error qui? Illo, atque aspernatur veritatis modi cumque perspiciatis, corporis blanditiis quae, repellat praesentium iste deleniti accusamus nemo.</p>
-            </div>
-            <center>
-                <button>Load More</button>
-            </center>
         </div>
+        <div class="article">
+            <p class="article_heading">How to generate income via internet by writing articles</p>
+            <p class="article_body">
+                Lorem ipsum dolor sit amet <b>hello</b> consectetur adipisicing elit. Excepturi voluptatibus quam at veniam exercitationem dicta vero vel corrupti ducimus omnis doloribus veritatis hic atque quos officiis incidunt quo, quidem nostrum nam? Doloremque quam, dolorum vel accusamus obcaecati quisquam officia animi accusantium distinctio asperiores aliquid praesentium, quaerat fuga commodi! Quo voluptates dignissimos aspernatur. Possimus a voluptatum ipsa, velit, quod rem voluptatem sed dolor cumque quos laudantium fugiat amet doloribus mollitia earum! Vel cumque recusandae, obcaecati magnam non possimus eum neque dignissimos voluptatum earum eligendi, nobis quasi repellendus in nulla animi explicabo eius. Nemo libero blanditiis inventore vitae veritatis laudantium alias optio!
+            </p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <img src="arghya.jpeg">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, esse. Sunt perferendis, optio ex reiciendis veniam cupiditate. Ipsam cupiditate explicabo quidem? Pariatur, soluta assumenda delectus praesentium quo fugit alias eius voluptates autem sit, quas consectetur illum, magni modi neque quis enim cum sint quae reiciendis facere architecto harum ipsum tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <p class="article_heading">Lorem ipsum dolor sit amet</p>
+            <p class="article_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi doloremque molestiae consectetur, dicta dolorum non ducimus veritatis eaque nulla tenetur aut quisquam maxime saepe praesentium error impedit ea doloribus voluptates eveniet. Et, autem distinctio enim cumque cupiditate sapiente, esse, rerum nihil quasi consectetur magnam dicta a. Quod tenetur magnam harum!</p>
+            <div class="status_bar">
+                <div class="view_count common_status_bar">
+                    <p>0 views</p>
+                </div>
+                <div class="publish_date common_status_bar">
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div class="footer">
-        <div class="contributors">
-            <p>Developed by Arghyadipta Das & Anurag Arya <br> Department of Energy Engineering</p>
-        </div>
-        <div class="copy">
-            <p>VAARSA &copy; 2025 A CCID Product</p>
+        <div class="footer_common">
+            <div class="contributors">
+                <p>Developed by Arghyadipta Das & Anurag Arya <br> Department of Energy Engineering <br> Central University of Jharkhand</p>
+            </div>
+            <div class="copy">
+                <p>VAARSA &copy; 2025 A CCID Product</p>
+            </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const articles = document.querySelectorAll(".article");
+            articles.forEach(article => {
+                const articleBody = article.querySelector(".article_body");
+                const img = article.querySelector("img");
+    
+                if (img && img.complete && img.naturalHeight !== 0) {
+                    articleBody.classList.add("has-image");
+                } else {
+                    articleBody.classList.add("no-image");
+                }
+            });
+        });
+    </script>
 </body>
 
-<script>
-    const burger = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar');
-    const navlist = document.querySelector('.nav_links');
-
-    document.querySelector('.burger').addEventListener('click', function() {
-        document.querySelector('.nav_links').classList.toggle('expanded');
-        document.querySelector('.navbar').classList.toggle('expandedlist');
-    });
-</script>
-<script>
-    function toggleBurger() {
-        document.querySelector('.burger').classList.toggle('active');
-        // document.querySelector('.nav_links').classList.toggle('expanded');
-    }
-</script>
 </html>

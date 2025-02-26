@@ -1,80 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>VAARSA</title>
-</head>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="footer.css">
 
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
 <body>
-    <div class="navbar">
-        <div class="title">
-            <img src="vaarsa.jpeg">
-        </div>
-        <div class="burger" onclick="toggleBurger()">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>        
-        <div class="nav_links">
-            <a href="index.html" class="menu">Home</a>
-            <a href="#" class="menu">Student</a>
-            <a href="#" class="menu">Chalk!</a>
-            <a href="#" class="menu">About</a>
-            <a href="#" class="menu">Donate</a>
-            <a href="login.html" class="menu block green">Login</a>
-            <a href="register.html" class="menu block blue">Register</a>
-        </div>
-    </div>
     <div class="container">
-        <div class="reg_box">
-            <h1 class="log789">Login</h1>
-            <form action="a.php" class="forms">
-                <input type="email" name="email" id="email" placeholder="Email" class="input">
-                <input type="password" name="password" id="password" placeholder="Password" class="input">
-                <a href="#" class="forgot_pass">Forgot password?</a>
-                <div class="buttons">
-                    <input type="submit" value="Login" class="user_button">
-                    <a href="register.html" class="register">
-                        <button type="button" class="register_button">Register</button>
-                    </a>
-                </div>
-            </form>
+        <div class="banner_image">
+            <div class="image">
+                <img src="vaarsa.png">
+            </div>
+            <div class="fullform">
+                <p class="para">Verse in Academics Assessment Reasearch and Study Amplifier</p>
+            </div>
+        </div>
+        <div class="login_box">
+            <div class="login_part">
+                <form action="#">
+                    <input type="email" name="email" class="input" id="email" placeholder="Email address">
+                    <input type="password" name="password" class="input" id="password" placeholder="Password">
+                    <input type="submit" class="input_button login_button" value="Log in">
+                    <div class="forgot_pass_out">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+                </form>
+                <a href="register.html">
+                    <button class="register input_button">Create new account</button>
+                </a>
+            </div>
+            <div class="navbar">
+                <a href="index.html" class="navlinks">Home</a>
+                <a href="#" class="navlinks">About</a>
+                <a href="#" class="navlinks">Privacy</a>
+                <a href="#" class="navlinks">Terms</a>
+                <a href="#" class="navlinks">Developers</a>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <div class="contributors">
-            <p>Developed by Arghyadipta Das & Anurag Arya <br> Department of Energy Engineering</p>
-        </div>
-        <div class="copy">
-            <p>VAARSA &copy; 2025 A CCID Product</p>
+        <div class="footer_common">
+            <div class="contributors">
+                <p>Developed by Arghyadipta Das & Anurag Arya <br> Department of Energy Engineering <br> Central University of Jharkhand</p>
+            </div>
+            <div class="copy">
+                <p>VAARSA &copy; 2025 A CCID Product</p>
+            </div>
         </div>
     </div>
 </body>
-
-<script>
-    const burger = document.querySelector('.burger');
-    const navbar = document.querySelector('.navbar');
-    const navlist = document.querySelector('.nav_links');
-
-    document.querySelector('.burger').addEventListener('click', function() {
-        document.querySelector('.nav_links').classList.toggle('expanded');
-        document.querySelector('.navbar').classList.toggle('expandedlist');
-    });
-</script>
-<script>
-    function toggleBurger() {
-        document.querySelector('.burger').classList.toggle('active');
-        // document.querySelector('.nav_links').classList.toggle('expanded');
-    }
-</script>
-
 </html>
