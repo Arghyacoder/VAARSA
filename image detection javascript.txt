@@ -1,0 +1,38 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const articles = document.querySelectorAll(".article");
+    
+    // Function to check if the image is loaded
+    const checkImageLoad = (article, img) => {
+        const articleBody = article.querySelector(".article_body");
+        
+        if (img && img.complete && img.naturalHeight !== 0) {
+            articleBody.classList.add("has-image");
+        } else {
+            articleBody.classList.add("no-image");
+        }
+    };
+
+    articles.forEach(article => {
+        const img = article.querySelector("img");
+
+        if (img) {
+            // If the image is already loaded
+            if (img.complete && img.naturalHeight !== 0) {
+                checkImageLoad(article, img);
+            } else {
+                // Wait for the image to load
+                img.addEventListener('load', function() {
+                    checkImageLoad(article, img);
+                });
+                
+                // If image fails to load, we also need to handle error
+                img.addEventListener('error', function() {
+                    checkImageLoad(article, img);
+                });
+            }
+        } else {
+            const articleBody = article.querySelector(".article_body");
+            articleBody.classList.add("no-image");
+        }
+    });
+});
